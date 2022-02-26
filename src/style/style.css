@@ -1,0 +1,253 @@
+/*Global version*/
+
+/*HEADER*/
+
+header {
+    background-color: #4040bb;
+    background-size: cover;
+}
+.header__top{
+    font-family: "Open Sans",sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size:.875rem ;
+    line-height: 160%;
+    letter-spacing: 1px;
+    margin-bottom:7.5rem ;
+}
+.top__link{
+    padding: .75rem;
+}
+.header__main{
+    font-family: Muli, sans-serif;
+    font-weight: 300;
+    color: white;
+}
+.header__title{
+    font-size: 3.5rem;
+    line-height: 1.14;
+    letter-spacing: 1px;
+    display: inline;
+    margin-bottom: .8em;
+}
+.header__subtitle{
+    font-size: 1.3rem;
+    margin-bottom: 1.25rem;
+    line-height: 130%;
+}
+.header__link{
+    font-family: "Open Sans",sans-serif;
+    font-weight: bold;
+    font-size:.85rem;
+    padding: .65rem 2rem;
+    border-radius:3.5rem;
+    margin:0 1.1em 1.1em 1.1em;
+}
+.header__link.projet__link{
+    background-color:#36A3DC;
+}
+.header__link.contact__link{
+    border:2px solid white ;
+}
+
+
+
+
+
+/*MAIN*/
+
+
+/*INTRO*/
+.main__section{
+    padding: 48px 015px;
+}
+.soft--skill,.objectif{
+    background-color:#F6F7F9 ;
+}
+.intro svg{
+    width: 60px;
+    height: 60px;
+    background-color:#03a9f4;
+    border-radius: 50%;
+    fill: white;
+    padding: 14px;
+    box-shadow: 0 10px 30px 0 rgb(49 52 57 / 30%), 0 10px 30px rgb(0 0 0 / 8%);
+    margin-bottom:1.96876rem ;
+}
+.intro__content{
+    margin-bottom:1.875em ;
+}
+.description{
+    font-family: "Open Sans",sans-serif;
+    font-weight: 600;
+    color:#8E9DAE ;
+    line-height: 1.5rem;
+    font-size:.875rem ;
+    margin-bottom: 1rem;
+}
+.intro__title,.name,.skill__name,.case__author {
+    font-family: Muli,sans-serif;
+    font-size: .83em;
+    margin-bottom: 1rem;
+    color:rgb(60, 66, 79);
+    line-height: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+}
+.name{
+    font-family: Helvetica,sans-serif;
+}
+/*OBJECTIF*/
+
+.objectif__texte--change{
+    font-family:"Playfair Display","Helvetica",sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.objectif__description{
+    margin-bottom: 1rem;
+}
+/*EXPERIENCE*/
+.experience__title,.skill_title{
+    text-transform: uppercase;
+}
+.experience__description{
+    color: rgb(60, 66, 79);
+    margin-bottom: 2rem;
+}
+.experience__deep--description{
+    font-size: 1rem;
+    color: rgb(142, 157, 174);
+    line-height: 1.3125rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+
+}
+/*SKILL*/
+.skill__list{
+    grid-gap: 5% 20%;
+    justify-content: center;
+    display: grid ;
+    grid-template-rows: repeat(3,50px);
+    grid-template-columns: 30% 30%;
+}
+/*FEEDBACK*/
+.feedback{
+    background-color: rgb(245, 250, 253);
+}
+.feedback__container{
+    display: grid;
+    justify-content: center;
+    grid-gap:30px ;
+}
+.feedback__description{
+    font-weight: 300;
+    color:rgb(60, 66, 79) ;
+    font-size: 1.05rem;
+}
+.feedback__case{
+    background-color:#fff ;
+   border:1px solid #e0e1e1;
+    padding: 24px 40px;
+}
+.feedback__quote{
+    max-width: 1.4rem;
+    box-shadow:none;
+    fill: #03a9f4;
+}
+.case__description{
+    font-weight:400;
+    line-height: 1.31rem;
+}
+.case__author{
+    font-size: 12px;
+    line-height: 19px;
+    text-transform:none;
+
+}
+.case__site{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    margin: inherit;
+
+}
+/*FOOTER*/
+.footer{
+    background-color: #222;
+    padding:20px 15px;
+}
+.footer__title{
+    color:#fff;
+    font-size:.9625rem ;
+}
+.footer__text{
+    color:#aaaaaa ;
+    font-size: 14px;
+    font-weight: 400;
+}
+.socials__list{
+    margin-bottom:40px ;
+}
+.footer__end{
+    color:#fff ;
+}
+/*global attribute*/
+a{
+    text-decoration: none;
+    color: white;
+}
+strong{
+    font-weight: 600;
+}
+.button{
+    background-color: #03a9f4;
+    border-radius: 5px;
+    font-family: "Open Sans",sans-serif;
+    font-size: .75rem;
+    padding: .55rem 1.5rem;
+    font-weight: 600;
+    margin-bottom: .75rem;
+
+}
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+h2{
+    font-family: Muli,sans-serif;
+    font-weight: 600;
+    font-size: 2.1875rem;
+    line-height: 2.625rem;
+    color: rgb(60, 66, 79);
+    margin-bottom: 50px;
+}
+/* Mobile version: */
+@media only screen and (max-width: 768px) {
+    body{
+        text-align: center;
+    }
+
+    .header--description{
+        display: flex;
+        flex-wrap: wrap;
+        margin:3%;
+    }
+    img,svg{
+        max-width: 90%;
+        margin-bottom: 1rem;
+        box-shadow: 0 10px 30px 0 rgba(49,52,57,.3),0 10px 30px rgba(0,0,0,.08);
+}
+    .objectif__image{
+        margin-top: 36px ;
+    }
+    .soft--skills__image{
+
+    }
+}
