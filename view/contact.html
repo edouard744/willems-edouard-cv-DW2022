@@ -6,56 +6,85 @@
     <meta name="description" content="Projet CV du cours de design web">
     <meta name="keywords" content="HTML,CSS,JavaScript,contact,CV">
     <meta name="author" content="Willems Edouard">
+    <link rel="stylesheet" href="/src/style/contact.css">
     <title>Willems Edouard Contact</title>
 
 </head>
 <body>
-    <header class="header">
-        <div class="header-top">
-            <a href="index.html" class="logo__link top__link">Accueil</a>
-            <a href="#" class="projet__link top__link">Réalisations</a>
+    <header class="header" style='background-image:url("/image/background-image.jpeg")'>
+        <div class="header__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="80" height="80" viewBox="0 0 331 183.21"><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path d="M299,94.83l1-27.21-46.47-19.9L260.78,32,331,31.51,325.7,0,242.86.45h-.93l-37,71-19.26-39-34.49-.89-20.61,42.1L94.22.46H23.39L0,29,77.52,182.75h34.06L131,143.56l19.36,39.19h1l147.09.45,1.13-31.74-98,.32,1.25-4.64ZM94.28,148,34,29.79H74.13l39.41,79.28Zm53.81-39.41,20.1-40.76,19.42,39.64-20,40.08ZM270,80.42l-51.52,28.09,1.06-2.42,23-36.83Z"/></g></g></svg>
+        </div>
+        <div class="header__top top">
+            <a href="/index.html" class="logo__link top__link">Accueil</a>
+            <a href="#" class="portfolio__link top__link">Réalisations</a>
+            <a href="#" class="skill__link top__link">Compétence</a>
             <a href="#" class="contact__link top__link">Contact</a>
         </div>
         <div class="header--main">
             <h1 class="header__title">Contact</h1>
         </div>
+        <div class="header__separator header-separator-bottom">
+            <svg class="svg__separator" preserveAspectRatio="none" width="1000" height="100" viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
+                <g fill="none">
+                    <path class="svg-white-bg" d="M-1.23 78.87c186.267-24.436 314.878-36.485 385.833-36.147 106.432.506 167.531 21.933 236.417 21.933s183.312-50.088 254.721-55.62c47.606-3.688 89.283 2.613 125.03 18.901v72.063l-1002 1.278v-22.408z" fill="#000"></path>
+                    <path class="svg-accent" d="M-1.23 87.791c171.627-34.447 300.773-52.658 387.438-54.634 129.998-2.964 166.902 40.422 235.909 40.422s175.29-63.463 246.825-68.994c47.69-3.687 91.633 10.063 131.828 41.25" stroke="#50E3C2" stroke-width="1"></path>
+                </g>
+            </svg>
+        </div>
     </header>
     <main class="main">
+        <div class="main__intro">
         <p class="objectif__name">
             Willems Edouard développeur web
         </p>
         <h2 class="main__title">Contacter moi !</h2>
         <h3 class="main__subtitle">« N’hésiter plus, discutons de vos projets »</h3>
-        <p class="main__description">Je suis toujours disponible pour vos éventuelles question, proposition de projets ou d’emplois ou pour toute autre proposition de collaboration. Je vous répond dans les plus bref délais, vous fournir rapidement une réponse est ma priorité</p>
+        <p class="main__description">Je suis toujours disponible pour vos éventuelles question, proposition de projets ou d’emplois ou pour toute autre proposition de collaboration. Je vous réponds dans les plus brefs délais, vous fournir rapidement une réponse est ma priorité</p>
+        </div>
         <!--<svg></svg>-->
+        <section class="shape--global">
+            <div class="shape--main shape--div">
+                <svg class="shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                    <path class="shape__path" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path>
+                    <path class="shape__path" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path>
+                    <path class="shape__path" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path>
+                </svg>
+            </div>
+        <div class="shape--top shape--div">
+            <svg class="shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"> <path class="shape__path" opacity="0.33" d="M473,67.3c-203.9,88.3-263.1-34-320.3,0C66,119.1,0,59.7,0,59.7V0h1000v59.7 c0,0-62.1,26.1-94.9,29.3c-32.8,3.3-62.8-12.3-75.8-22.1C806,49.6,745.3,8.7,694.9,4.7S492.4,59,473,67.3z"></path> <path class="shape__path" opacity="0.66" d="M734,67.3c-45.5,0-77.2-23.2-129.1-39.1c-28.6-8.7-150.3-10.1-254,39.1 s-91.7-34.4-149.2,0C115.7,118.3,0,39.8,0,39.8V0h1000v36.5c0,0-28.2-18.5-92.1-18.5C810.2,18.1,775.7,67.3,734,67.3z"></path> <path class="shape__path" d="M766.1,28.9c-200-57.5-266,65.5-395.1,19.5C242,1.8,242,5.4,184.8,20.6C128,35.8,132.3,44.9,89.9,52.5C28.6,63.7,0,0,0,0 h1000c0,0-9.9,40.9-83.6,48.1S829.6,47,766.1,28.9z"></path> </svg>
+        </div>
 
+        </section>
+
+        <h2 class="form--title">FORMULAIRE DE CONTACT</h2>
         <form action="" method="get" class="main__form">
             <div class="form__lastname form__div">
-                <label for="lastname">Nom* </label>
+                <label for="lastname">Nom* <br></label>
                 <input type="text" name="lastname" id="lastname" required>
             </div>
             <div class="form__firstname form__div">
-                <label for="firstname">Prénom* </label>
+                <label for="firstname">Prénom* <br></label>
                 <input type="text" name="firstname" id="firstname" required>
             </div>
             <div class="form__mail form__div">
-                <label for="email">Adresse mail*</label>
+                <label for="email">Adresse mail* <br></label>
                 <input type="email" name="email" id="email" required>
             </div>
             <div class="form__company form__div">
-                <label for="company">Société </label>
+                <label for="company">Société <br></label>
                 <input type="text" name="company" id="company">
             </div>
             <div class="form__number form__div">
-                <label for="number">Téléphone </label>
+                <label for="number">Téléphone <br></label>
                 <input type="text" name="number" id="number">
             </div>
             <div class="form__object form__div">
-                <label for="object">Objet* </label>
+                <label for="object">Objet* <br></label>
                 <input type="text" name="object" id="object" required>
             </div>
             <div class="form__object form__div">
-            <label for="message">Message* </label>
+            <label for="message">Message* <br></label>
             <input type="text" name="message" id="message" required>
             </div>
             <div class="form__submit form__div">
@@ -64,27 +93,33 @@
         </form>
     </main>
     <footer class="footer">
-        <div class="footer__shortdesc">
-            <p class="desc__title">WE</p>
-            <p class="desc__content">Willems Edouard, Le développeur web qu’il vous faut pour atteindre vos objectifs</p>
+        <div class="footer__content">
+            <div class="gridContainer">
+                <div class="footer__shortdesc footer__div">
+                    <p class="footer__title description">WE</p>
+                    <p class="footer__text description"><strong>Willems Edouard</strong>, Le développeur web qu’il vous faut pour atteindre vos objectifs</p>
+                </div>
+                <div class="footer__text footer__div">
+                    <p class="footer__title description">Liens</p>
+                    <ul class="link__list">
+                        <li class="link__name"><a class="footer__text description" href="#">Contact</a></li>
+                        <li class="link__name"><a class="footer__text description" href="#">Réalisations</a></li>
+                    </ul>
+                </div>
+                <div class="footer__socials footer__div">
+                    <p class="footer__title description">Réseaux</p>
+                    <ul class="socials__list">
+                        <li class="socials__name"><a class="footer__text description" href="#" > Github</a></li>
+                        <li class="socials__name"><a class="footer__text description" href="#" > Linkedin</a></li>
+                        <li class="socials__name"><a class="footer__text description" href="#" > Stackoverflow</a></li>
+                        <li class="socials__name"><a class="footer__text description" href="#" > Teams</a></li>
+                    </ul>
+                </div>
+                <div class="footer__bottom footer__div">
+                    <h2 class="footer__end">Votre Futur Collaborateur</h2>
+                </div>
+            </div>
         </div>
-        <div class="footer__link">
-            <p class="link__title">Liens</p>
-            <ul class="link__list">
-                <li class="link__name"><a href="#">Contact</a></li>
-                <li class="link__name"><a href="#">Réalisations</a></li>
-            </ul>
-        </div>
-        <div class="footer__socials">
-            <p class="socials__title">Réseaux</p>
-            <ul class="socials__list">
-                <li class="socials__name"><a href="#"> Github</a></li>
-                <li class="socials__name"><a href="#"> Linkedin</a></li>
-                <li class="socials__name"><a href="#"> Stackoverflow</a></li>
-                <li class="socials__name"><a href="#"> Teams</a></li>
-            </ul>
-        </div>
-        <h2 class="footer.title">Votre Futur Collaborateur</h2>
     </footer>
 </body>
 </html>
