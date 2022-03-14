@@ -14,33 +14,47 @@
     <header class="header" style='background-image:url("/image/background-image.jpeg")'>
         <div class="header__logo">
             <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="80" height="80" viewBox="0 0 331 183.21"><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path d="M299,94.83l1-27.21-46.47-19.9L260.78,32,331,31.51,325.7,0,242.86.45h-.93l-37,71-19.26-39-34.49-.89-20.61,42.1L94.22.46H23.39L0,29,77.52,182.75h34.06L131,143.56l19.36,39.19h1l147.09.45,1.13-31.74-98,.32,1.25-4.64ZM94.28,148,34,29.79H74.13l39.41,79.28Zm53.81-39.41,20.1-40.76,19.42,39.64-20,40.08ZM270,80.42l-51.52,28.09,1.06-2.42,23-36.83Z"/></g></g></svg>
+            <svg class="burger__button" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" fill="white"
+                 viewBox="0 0 700 700">
+                <g>
+                    <path d="M131.6,112v56h436.8v-56H131.6z M131.6,252v56h436.8v-56H131.6z M131.6,392v56h436.8v-56H131.6z"/>
+                </g>
+            </svg>
         </div>
         <div class="header__top top">
+            <svg class="burger__button burger__button--close" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" fill="white"
+                 viewBox="0 0 700 700">
+                <g>
+                    <path d="M478.3,115.4L350,243.7L221.7,115.4l-36.3,36.3L313.7,280L185.4,408.3l36.3,36.3L350,316.3l128.3,128.2l36.3-36.3
+		                L386.3,280l128.2-128.3L478.3,115.4z"/>
+                </g>
+            </svg>
             <a href="/index.html" class="logo__link top__link">Accueil</a>
             <a href="#" class="portfolio__link top__link">Réalisations</a>
             <a href="#" class="skill__link top__link">Compétence</a>
             <a href="#" class="contact__link top__link">Contact</a>
         </div>
         <div class="header--main">
-            <h1 class="header__title">Contact</h1>
+            <h1 class="header__title no-js">Contact</h1>
         </div>
         <div class="header__separator header-separator-bottom">
             <svg class="svg__separator" preserveAspectRatio="none" width="1000" height="100" viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none">
                     <path class="svg-white-bg" d="M-1.23 78.87c186.267-24.436 314.878-36.485 385.833-36.147 106.432.506 167.531 21.933 236.417 21.933s183.312-50.088 254.721-55.62c47.606-3.688 89.283 2.613 125.03 18.901v72.063l-1002 1.278v-22.408z" fill="#000"></path>
-                    <path class="svg-accent" d="M-1.23 87.791c171.627-34.447 300.773-52.658 387.438-54.634 129.998-2.964 166.902 40.422 235.909 40.422s175.29-63.463 246.825-68.994c47.69-3.687 91.633 10.063 131.828 41.25" stroke="#50E3C2" stroke-width="1"></path>
+                    <path class="svg__animation" d="M-1.23,87.791q257.441-51.67,387.438-54.634c130-2.964,166.9,40.422,235.909,40.422S797.407,10.116,868.942,4.585q71.535-5.531,131.828,41.25c40.2,31.187,89.934,52.428,167.065,34.573S1316.759,21.35,1372.062,18.14s98.693,18.3,98.693,18.3,94.4,66.359,532.142-32.591" transform="translate(1.328 -3.363)" fill="none" stroke="#50e3c2" stroke-width="1"/>
+
                 </g>
             </svg>
         </div>
     </header>
     <main class="main">
         <div class="main__intro">
-        <p class="objectif__name">
+        <p class="objectif__name no-js">
             Willems Edouard développeur web
         </p>
-        <h2 class="main__title">Contacter moi !</h2>
-        <h3 class="main__subtitle">« N’hésiter plus, discutons de vos projets »</h3>
-        <p class="main__description">Je suis toujours disponible pour vos éventuelles question, proposition de projets ou d’emplois ou pour toute autre proposition de collaboration. Je vous réponds dans les plus brefs délais, vous fournir rapidement une réponse est ma priorité</p>
+        <h2 class="main__title no-js reveal-1">Contacter moi !</h2>
+        <h3 class="main__subtitle no-js reveal-2">« N’hésiter plus, discutons de vos projets »</h3>
+        <p class="main__description no-js reveal-3">Je suis toujours disponible pour vos éventuelles question, proposition de projets ou d’emplois ou pour toute autre proposition de collaboration. Je vous réponds dans les plus brefs délais, vous fournir rapidement une réponse est ma priorité</p>
         </div>
         <!--<svg></svg>-->
         <section class="shape--global">
@@ -57,38 +71,38 @@
 
         </section>
 
-        <h2 class="form--title">FORMULAIRE DE CONTACT</h2>
-        <form action="" method="get" class="main__form">
+        <h2 class="form--title no-js">FORMULAIRE DE CONTACT</h2>
+        <form action="https://formsubmit.co/willems.edouard.pro@gmail.com" method="POST" class="main__form">
             <div class="form__lastname form__div">
-                <label for="lastname">Nom* <br></label>
-                <input type="text" name="lastname" id="lastname" required>
+                <label class="no-js" for="lastname">Nom* <br></label>
+                <input class="no-js reveal-2" type="text" name="lastname" id="lastname" required>
             </div>
             <div class="form__firstname form__div">
-                <label for="firstname">Prénom* <br></label>
-                <input type="text" name="firstname" id="firstname" required>
+                <label class="no-js" for="firstname">Prénom* <br></label>
+                <input class="no-js reveal-2" type="text" name="firstname" id="firstname" required>
             </div>
             <div class="form__mail form__div">
-                <label for="email">Adresse mail* <br></label>
-                <input type="email" name="email" id="email" required>
+                <label class="no-js" for="email">Adresse mail* <br></label>
+                <input class="no-js reveal-2" type="email" name="email" id="email" required>
             </div>
             <div class="form__company form__div">
-                <label for="company">Société <br></label>
-                <input type="text" name="company" id="company">
+                <label class="no-js" for="company">Société <br></label>
+                <input class="no-js reveal-2" type="text" name="company" id="company">
             </div>
             <div class="form__number form__div">
-                <label for="number">Téléphone <br></label>
-                <input type="text" name="number" id="number">
+                <label class="no-js" for="number">Téléphone <br></label>
+                <input class="no-js reveal-2" type="text" name="number" id="number">
             </div>
             <div class="form__object form__div">
-                <label for="object">Objet* <br></label>
-                <input type="text" name="object" id="object" required>
+                <label class="no-js" for="object">Objet* <br></label>
+                <input class="no-js reveal-2" type="text" name="object" id="object" required>
             </div>
             <div class="form__object form__div">
-            <label for="message">Message* <br></label>
-            <input type="text" name="message" id="message" required>
+            <label class="no-js" for="message">Message* <br></label>
+                <textarea class="no-js reveal-2" name="message" id="message" cols="40" rows="10" required></textarea>
             </div>
             <div class="form__submit form__div">
-                <input type="submit" value="Envoyer">
+                <input class="no-js reveal-2 submit" type="submit" value="Envoyer">
             </div>
         </form>
     </main>
@@ -121,5 +135,6 @@
             </div>
         </div>
     </footer>
+    <script src="/src/js/main.js"></script>
 </body>
 </html>

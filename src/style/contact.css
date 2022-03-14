@@ -50,9 +50,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-ol, ul {
-    list-style: none;
-}
+
 blockquote, q {
     quotes: none;
 }
@@ -65,9 +63,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
-
-
 header {
     background-color: #4040bb;
     background-size: cover;
@@ -160,10 +155,10 @@ header {
 }
 .footer__title{
     color:#fff;
-    font-size:1.1rem ;
+    font-size:1.1rem;
 }
 .footer__text{
-    color:#aaaaaa ;
+    color:#aaaaaa;
     font-size: 14px;
     font-weight: 400;
 }
@@ -175,7 +170,8 @@ header {
 }
 ol, ul {
     list-style: none;
-    padding-left: 0;
+    padding-left:0;
+    line-height: 32px;
 }
 h2 {
     font-family: Muli,sans-serif;
@@ -195,10 +191,11 @@ a{
     font-size: 20px;
     font-weight: 600;
     letter-spacing: .5px;
+    margin-bottom: 3rem;
 }
 .main__title{
     color: #000;
-    font-family: "Muli",sans-serif;
+    font-family: "Muli","Helvetica",sans-serif;
     font-size: 50px;
     font-weight: 800;
     text-transform: uppercase;
@@ -208,7 +205,7 @@ a{
 .main__intro{
     text-align: center;
     width: 90%;
-    margin: 0 auto;
+    margin: 5em auto;
     max-width: 1232px;
 }
 .main__subtitle{
@@ -219,7 +216,7 @@ a{
 .main__description{
      color: #000;
      font-family: "Open Sans",sans-serif;
-     font-size: 16px;
+     font-size: 1rem;
      line-height: 2em;
  }
 .shape{
@@ -241,6 +238,10 @@ a{
 }
 .form--title{
     text-align: center;
+    margin:50px;
+}
+.form__div{
+    margin-bottom: 16px;
 }
 label{
     display: inline-block;
@@ -254,9 +255,9 @@ label{
 }
 form{
     width: 90%;
-    margin: 0 auto;
+    margin: 4em auto;
 }
-input{
+input,textarea{
     display: block;
     width: 100%;
     font-size: 1rem;
@@ -264,11 +265,26 @@ input{
     outline: 0;
     vertical-align: middle;
     background-color: #fff;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #cccccc;
     border-radius: 3px;
     box-shadow: none;
-    padding: 0 12px;
 }
+
+textarea{
+    height: inherit;
+}
+.submit{
+    display: inherit;
+    width: inherit;
+}
+
+
+
+
+
+
+
+/*COMPUTER*/
 @media only screen and (min-width: 769px) {
     html {
         font-size: 16px;
@@ -305,6 +321,10 @@ input{
     }
     .header__top,.header__logo{
         text-align: center;
+    }
+    .main__subtitle{
+        margin:70px;
+
     }
     .gridContainer {
         display: flex;
@@ -363,18 +383,120 @@ input{
     .footer__text {
         font-size: 16px;
     }
+    .burger__logo{
+        visibility: hidden;
+    }
+    .burger__button{
+        visibility:hidden;
+    }
 }
 
+
+
+
+
+
+
+
+
+
+
+/*MOBILE*/
 @media only screen and (max-width: 768px) {
     html{
         font-size: 14px;
+    }
+    header{
+        text-align: center;
     }
     .header--description{
         display: flex;
         flex-wrap: wrap;
         margin:3%;
     }
+    .header__top.burger__menu--open{
+        left: 100%;
+    }
+    .header__logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        margin-left: 20px;
+    }
+
+    .burger__menu{
+        transition: transform .3s linear;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: auto;
+        top: 0;
+        right: 0;
+        width: 300px;
+        background-color: #222B34;
+        min-height: 100%;
+        z-index: 10;
+        align-items: flex-start;
+        padding-top: 30px;
+        overflow: auto;
+    }
+    .burger__button--open{
+        position: absolute;
+        left: auto;
+    }
+    .burger__button{
+        fill: white;
+        margin-right: 20px;
+
+    }
+    .top__link{
+        border-bottom: 1px solid rgba(128,128,128,.2);
+        text-align: left;
+        width: 100%;
+        font-size: 13px;
+        padding:10.5px 0 10.5px 35px;
+    }
+    .top__link:active,.top__link:hover{
+        background-color: rgb(46,54,62);
+    }
+    .burger__logo{
+            margin: 0 auto;
+        }
     .footer{
         padding:20px 15px;
+        text-align: center;
     }
+    .main__subtitle,.main__title{
+        font-size:25px;
+        margin-bottom: 20px;
+    }
+    .main__title{
+        margin-bottom: 50px;
+    }
+    .objectif__name{
+        font-size: 15px;
+    }
+}
+/*animation JS*/
+.reveal{
+    opacity: 0;
+    transform: translateY(30px);
+}
+.active{
+    opacity: 1;
+    transform: translateY(0);
+    transition: .8s /*cubic-bezier(.5,-0.03,.32,.92)*/;
+}
+.reveal-1{
+    transition-delay:.1s;
+}
+.reveal-2{
+    transition-delay:.2s;
+}
+.reveal-3{
+    transition-delay: .3s;
+}
+.reveal-4{
+    transition-delay: .4s;
 }

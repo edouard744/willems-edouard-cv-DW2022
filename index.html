@@ -13,18 +13,32 @@
     <header class="header" style='background-image:url("/image/background-image.jpeg")'>
         <div class="header__logo">
         <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="80" height="80" viewBox="0 0 331 183.21"><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path d="M299,94.83l1-27.21-46.47-19.9L260.78,32,331,31.51,325.7,0,242.86.45h-.93l-37,71-19.26-39-34.49-.89-20.61,42.1L94.22.46H23.39L0,29,77.52,182.75h34.06L131,143.56l19.36,39.19h1l147.09.45,1.13-31.74-98,.32,1.25-4.64ZM94.28,148,34,29.79H74.13l39.41,79.28Zm53.81-39.41,20.1-40.76,19.42,39.64-20,40.08ZM270,80.42l-51.52,28.09,1.06-2.42,23-36.83Z"/></g></g></svg>
+            <svg class="burger__button" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" fill="white"
+                 viewBox="0 0 700 700">
+                <g>
+	                <path d="M131.6,112v56h436.8v-56H131.6z M131.6,252v56h436.8v-56H131.6z M131.6,392v56h436.8v-56H131.6z"/>
+                </g>
+            </svg>
         </div>
         <div class="header__top">
+            <svg class="burger__button burger__button--close" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" fill="white"
+                 viewBox="0 0 700 700">
+                <g>
+                    <path d="M478.3,115.4L350,243.7L221.7,115.4l-36.3,36.3L313.7,280L185.4,408.3l36.3,36.3L350,316.3l128.3,128.2l36.3-36.3
+		                L386.3,280l128.2-128.3L478.3,115.4z"/>
+                </g>
+            </svg>
+            <svg class="burger__logo visually-hidden" xmlns="http://www.w3.org/2000/svg" fill="white" width="80" height="80" viewBox="0 0 331 183.21"><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><path d="M299,94.83l1-27.21-46.47-19.9L260.78,32,331,31.51,325.7,0,242.86.45h-.93l-37,71-19.26-39-34.49-.89-20.61,42.1L94.22.46H23.39L0,29,77.52,182.75h34.06L131,143.56l19.36,39.19h1l147.09.45,1.13-31.74-98,.32,1.25-4.64ZM94.28,148,34,29.79H74.13l39.41,79.28Zm53.81-39.41,20.1-40.76,19.42,39.64-20,40.08ZM270,80.42l-51.52,28.09,1.06-2.42,23-36.83Z"/></g></g></svg>
             <a href="#" class="logo__link top__link">Accueil</a>
             <a href="#" class="portfolio__link top__link">Réalisations</a>
-            <a href="#" class="skill__link top__link">Compétence</a>
+            <a href="#skill" class="skill__link top__link">Compétence</a>
             <a href="view/contact.html" class="contact__link top__link">Contact</a>
         </div>
         <div class="header__main main__section header__container">
 
             <div class="header--main__content" >
-                <div class="header--content header--description">
-                    <h1 class="header__title no-js reveal-1 ">Willems Edouard Le développeur web qu’il vous faut </h1>
+                <div class="header--content header--description" itemscope itemtype="https://schema.org/Person">
+                    <h1 class="header__title no-js reveal-1 "><span itemprop="familyName">Willems</span> <span itemprop="givenName">Edouard</span> Le <span itemprop="jobTitle">développeur web</span> qu’il vous faut </h1>
                     <p class="header__subtitle no-js reveal-2 ">
                         Jeune diplômé d’un bachelier en technique graphique finalité
                         web, je suis un passionné de graphisme et développement
@@ -44,11 +58,10 @@
 
         </div>
         <div class="header__separator header-separator-bottom">
-            <svg class="svg__separator" preserveAspectRatio="none" width="1000" height="100" viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
+           <svg class="svg__separator" preserveAspectRatio="none" width="1000" height="100" viewBox="0 0 1000 100" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none">
-                    <path class="svg-white-bg" d="M-1.23 78.87c186.267-24.436 314.878-36.485 385.833-36.147 106.432.506 167.531 21.933 236.417 21.933s183.312-50.088 254.721-55.62c47.606-3.688 89.283 2.613 125.03 18.901v72.063l-1002 1.278v-22.408z" fill="#000"></path>
-                    <!--<path class="svg-white-bg" d="M -1.23 78.87 c 186.267 -24.436 314.878 -36.485 385.833 -36.147 c 106.432 0.506 120.397 23.277 236.417 21.933 s 183.312 -50.088 254.721 -55.62 c 47.606 -3.688 110.259 38.964 449.259 -13.036 C 1558 6 1451 48 1667 18 C 1801 2 1893 -92 2086 53 v 120 l -2085 1 v -22.408 z" fill="#000">--></path>
-                    <path class="svg-accent" d="M-1.23 87.791c171.627-34.447 300.773-52.658 387.438-54.634 129.998-2.964 166.902 40.422 235.909 40.422s175.29-63.463 246.825-68.994c47.69-3.687 91.633 10.063 131.828 41.25" stroke="#50E3C2" stroke-width="1"></path>
+                    <path class="svg-white-bg" d="M-1.23 78.87c186.267-24.436 314.878-36.485 385.833-36.147 106.432.506 167.531 21.933 236.417 21.933s183.312-50.088 254.721-55.62c47.606-3.688 89.283 2.613 125.03 18.901v72.063l-1002 1.278v-22.408z" fill="#000"/>
+                    <path class="svg__animation" d="M-1.23,87.791q257.441-51.67,387.438-54.634c130-2.964,166.9,40.422,235.909,40.422S797.407,10.116,868.942,4.585q71.535-5.531,131.828,41.25c40.2,31.187,89.934,52.428,167.065,34.573S1316.759,21.35,1372.062,18.14s98.693,18.3,98.693,18.3,94.4,66.359,532.142-32.591" transform="translate(1.328 -3.363)" fill="none" stroke="#50e3c2" stroke-width="1"/>
                 </g>
             </svg>
         </div>
@@ -57,8 +70,8 @@
         <div class="intro" >
             <div class="gridContainer">
                 <h2 class="visually-hidden">introduction</h2>
-                <div class="intro__content no-js reveal-1">
-                    <svg class="intro__svg no-js reveal-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                <div class="intro__content">
+                    <svg class="intro__svg " xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          viewBox="0 0 700 700" style=":new 0 0 700 700;" xml:space="preserve">
                         <g>
                             <path d="M128.8,432.7c71.1-25.1,142.7-28.8,212.8-1.2V142.2c-30.7-10.2-63.2-15.1-97.3-15.2c-36.7-0.1-75.2,5.4-115.5,15.7
@@ -70,8 +83,8 @@
                     <h3 class="intro__title no-js reveal-3">Formation</h3>
                     <p class="intro__description description no-js reveal-4">Après des études secondaires en technique de transitions option électronique informatique, j’ai suivie un bachelier en technique graphique finalité web à l’HEPL </p>
                 </div>
-                <div class="intro__content no-js reveal-1">
-                    <svg class="intro__svg no-js reveal-2" width="700pt" height="700pt" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+                <div class="intro__content">
+                    <svg class="intro__svg " width="700pt" height="700pt" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
                         <g>
                             <path d="m213.25 317.27c-58.031 15.195-94.57 51.996-106.42 103.69-3.4492 14.789 1.8945 19.105 8.5312 21.148 45.609 14.047 130.03 19.035 163.16 19.035s117.55-4.9883 163.16-19.035c6.6328-2.043 11.977-6.3594 8.5273-21.148-11.848-51.688-48.391-88.488-106.41-103.69l-59.988 50.246c-3.0547 2.5586-7.5039 2.5586-10.559 0z"/>
                             <path d="m278.52 98.855c-50.469 0-91.098 41.062-91.098 92.066v6.2266c0 51.004 40.629 92.066 91.098 92.066s91.098-41.062 91.098-92.066v-6.2266c0-51.004-40.629-92.066-91.098-92.066z" fill-rule="evenodd"/>
@@ -83,8 +96,8 @@
                         Et très motivé à m’améliorer et découvrir de nouvelles choses dans ce domaine qui me passionne tant.
                         J’en apprends plus à chaque projet et c’est pour ça que j’aime ce métier.</p>
                 </div>
-                <div class="intro__content no-js reveal-1">
-                    <svg class="intro__svg no-js reveal-2" width="700pt" height="700pt" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+                <div class="intro__content">
+                    <svg class="intro__svg " width="700pt" height="700pt" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
                         <path d="m412.17 489.43c-14.547 4.3125-29.727 7.1484-45.367 8.3359v-87.93c20.988 2.2617 43.871 8.0234 65.465 14.949-0.23828 0.87109-0.48047 1.7383-0.72266 2.5977-6.1562 22.016-12.293 41.152-16.891 54.773-0.89062 2.6406-1.7227 5.0703-2.4844 7.2734zm40.961-16.859c13.438-7.2148 26.035-15.793 37.605-25.551-7.5391-3.2891-16.617-7.0859-26.723-10.988-0.035157 0.13672-0.074219 0.26953-0.10938 0.40625-3.7031 13.238-7.3984 25.457-10.773 36.133zm19.434-69.242c15.215 5.7734 28.402 11.418 38.109 15.777 2.0117 0.90234 3.875 1.75 5.5781 2.5352 29.117-34.145 47.902-77.371 51.512-124.84h-78.145c-1.6875 34.57-8.7773 72.426-17.055 106.52zm-16.586-106.52h-89.176v79.27c24.562 2.2695 50.469 8.7031 73.879 16.121 7.5117-31.473 13.664-65.148 15.297-95.391zm-0.16797-33.602h-89.008v-79.262c24.477-2.2617 50.281-8.6602 73.629-16.043 7.3906 31.234 13.508 64.758 15.379 95.305zm33.656 0h78.297c-3.6094-47.465-22.391-90.688-51.508-124.83-1.7031 0.78516-3.5664 1.6367-5.582 2.5391-9.7578 4.3828-23.039 10.062-38.352 15.867 8.1445 33.828 15.191 71.516 17.145 106.43zm-25.629-139.15c10.176-3.9258 19.32-7.75 26.902-11.059-11.605-9.793-24.25-18.395-37.738-25.621 3.3906 10.805 7.1094 23.211 10.836 36.68zm-51.707-53.484c-14.535-4.3047-29.703-7.1367-45.328-8.3242v87.938c20.926-2.2578 43.738-7.9922 65.281-14.891 0-0.007812-0.003906-0.011718-0.003906-0.019531-6.25-22.77-12.523-42.574-17.234-56.68-0.97656-2.9297-1.8867-5.6133-2.7148-8.0234zm-78.93 305.32v-79.082h-89.176c1.6289 30.16 7.75 63.734 15.234 95.137 23.586-7.5273 49.582-13.992 73.941-16.055zm-105.8 27.273c-8.2578-34.055-15.324-71.84-17.012-106.36h-78.145c3.6094 47.453 22.383 90.668 51.488 124.81 1.5273-0.71094 3.1836-1.4688 4.957-2.2734 9.7773-4.4336 23.211-10.246 38.711-16.18zm105.8-139.96h-89.008c1.8672-30.465 7.9531-63.891 15.32-95.051 23.516 7.4961 49.414 13.922 73.688 15.973zm-122.66 0c1.9492-34.852 8.9766-72.469 17.102-106.25-15.602-5.9688-29.125-11.816-38.953-16.273-1.7773-0.80469-3.4336-1.5664-4.9609-2.2773-29.102 34.141-47.875 77.355-51.484 124.8zm122.66-112.81c-20.746-2.0742-43.652-7.8477-65.352-14.852l0.074219-0.26953c6.25-22.77 12.523-42.574 17.234-56.68 0.97656-2.9297 1.8867-5.6133 2.7148-8.0234 14.535-4.3047 29.703-7.1367 45.328-8.3242zm-97.078-26.184c3.7422-13.531 7.4766-25.992 10.879-36.836-13.512 7.2383-26.176 15.859-37.801 25.672 7.5938 3.3398 16.746 7.2031 26.922 11.164zm-26.914 322.76c7.543-3.3203 16.637-7.1562 26.738-11.09l0.15234 0.55859c3.7031 13.238 7.3984 25.457 10.773 36.133-13.465-7.2266-26.078-15.82-37.664-25.602zm123.99 50.797c-15.641-1.1875-30.82-4.0234-45.367-8.3359-0.76172-2.2031-1.5938-4.6328-2.4844-7.2734-4.5977-13.621-10.734-32.758-16.891-54.773-0.26562-0.94141-0.52734-1.8906-0.79297-2.8477 21.75-7.0312 44.73-12.832 65.535-14.91zm268.8-217.76c0 139.18-112.82 252-252 252s-252-112.82-252-252 112.82-252 252-252 252 112.82 252 252z" fill-rule="evenodd"/>
                     </svg>
                     <h3 class="intro__title no-js reveal-3">mon travail</h3>
@@ -115,7 +128,7 @@
             <div class="gridContainer">
                 <div class="container">
                 <h2 class="experience__title no-js reveal-1">
-                Expérience professionnelles
+                Expérience professionnelle
             </h2>
             <p class="experience__description description no-js reveal-2">
                 Mon parcours professionnel démarre chez « White Cube » où j’ai eu la chance de pouvoir travailler avec une équipe dynamique et très efficace. J’ai ensuite travaillé un an et demi chez « Onlyweb », une petite entreprise avec une ambiance familiale et j’ai finalement travaillé chez « MikoDigital » durant trois ans.
@@ -123,11 +136,11 @@
                 </div>
                 <div class="container">
             <p class="experience__deep--description description no-js reveal-3" >Comme dit précédemment, j’ai commencé à travailler chez « White Cube », c’est là que j’ai appris le plus, dans le domaine du web, mais aussi dans la façon dont fonctionnait une équipe et une entreprise. J’ai ensuite rejoint « Onlyweb » Le fonctionnement était différent, on travaillait par petite équipe ce qui m’a permit de devenir polyvalent et de savoir toucher a tous. J’ai travaillé ces dernières années chez « MikoDigital » où j’ai dû apprend à savoir travailler sous pression dut à des délais courts et un enchaînement de projets régulier. </p>
-            <a href="#" class="experience__button button no-js reveal-4">Quelques témoignages</a>
+            <a href="#feedback" class="experience__button button no-js reveal-4">Quelques témoignages</a>
             </div>
             </div>
         </div>
-        <div class="soft--skill main__section">
+        <div class="soft--skill main__section" id="skill">
             <div class="gridContainer">
                 <div class="container">
             <img class="soft--skills__image no-js reveal-2" src="/image/working.gif" alt="animation montrant un web développeur travailler ">
@@ -156,9 +169,9 @@
             <p class="skill__name name no-js reveal-1">
                 Willems Edouard développeur web
             </p>
-            <h2 class="skill_title no-js reveal-2">Langage et logicielle maîtrisé</h2>
+            <h2 class="skill_title no-js reveal-2">Langage et logiciel maîtrisé</h2>
             <p class="skill__description description no-js reveal-3">
-                Durant mes études, mais aussi par moi-même durant mon parcours professionnel, j’ai pu apprendre et me familiariser avec plusieurs logicielles et langage de programmation tel que :
+                Durant mes études, mais aussi par moi-même durant mon parcours professionnel, j’ai pu apprendre et me familiariser avec plusieurs logiciels et langage de programmation tel que :
             </p>
             <ul class="skill__list no-js reveal-4">
                 <li class="skill__name no-js reveal-2">La suite adobe</li>
@@ -173,7 +186,7 @@
             </div>
             </div>
         </div>
-        <div class="feedback main__section">
+        <div class="feedback main__section" id="feedback">
             <div class="gridContainer">
                 <div class="container feedback__top">
                 <h2 class="feedback__title no-js reveal-1">Quelques témoignages sur mon travail</h2>
@@ -196,7 +209,7 @@
         </g>
         </svg>
                         <p class="case__description description no-js reveal-2">
-                            Son stage dans notre entreprise sait très bien dérouler. Il a su se montrer motiver et à l’écoute des conseils qu’on pouvait lui donner et il n’hésitait pas à proposer ses idées.
+                            Son stage dans notre entreprise s'est très bien dérouler. Il a su se montrer motiver et à l’écoute des conseils qu’on pouvait lui donner et il n’hésitait pas à proposer ses idées.
                             Nous gardons un bon souvenir de notre collaboration
                         </p>
                         <p class="case__author no-js reveal-3">Mme Duppont</p>
@@ -258,7 +271,7 @@
                 C113.8,308.3,126.6,313.6,140,313.6L140,313.6z"/>
         </g>
         </svg>
-                        <p class="case__description description no-js reveal-2">Rien à redire sur le comportement d'Edouard, il sait rapidement intégrer dans l’équipe et comprit notre manière de fonctionner, très autonome et toujours partant pour aider l’équipe quand il en avait la possibilité.
+                        <p class="case__description description no-js reveal-2">Rien à redire sur le comportement d'Edouard, il s'est rapidement intégrer dans l’équipe et comprit notre manière de fonctionner, très autonome et toujours partant pour aider l’équipe quand il en avait la possibilité.
                             Sa période de travail fut très productive et agréable </p>
                         <p class="case__author no-js reveal-3">M.Muller</p>
                         <p class="case__site description no-js reveal-4">onlyweb.be</p>
@@ -277,7 +290,7 @@
         <div class="footer__text footer__div no-js reveal-2">
             <p class="footer__title description no-js reveal-1">Liens</p>
             <ul class="link__list no-js reveal-2">
-                <li class="link__name no-js reveal-3"><a class="footer__text description" href="#">Contact</a></li>
+                <li class="link__name no-js reveal-3"><a class="footer__text description" href="view/contact.html">Contact</a></li>
                 <li class="link__name no-js reveal-4"><a class="footer__text description" href="#">Réalisations</a></li>
             </ul>
         </div>
