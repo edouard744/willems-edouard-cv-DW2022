@@ -22,8 +22,6 @@ function callback(entries, observer){
             observer.unobserve(entry.target);
         }});
 }
-
-
 for (const target of targets) {
     observer.observe(target);
 }
@@ -31,20 +29,32 @@ for (const target of targets) {
     const BurgerMenu = {
         init(){
             this.eMain = document.querySelector(".header__top");
-            this.mainLogo= document.querySelector('.header__logo');
             this.logoBurger=document.querySelector('.burger__logo');
-            this.close= document.querySelector('body:not(.header__top)');
-            this.eMain.classList.add("burger__menu");
-            this.eMain.classList.add("burger__menu--open");
-            document.querySelector(".burger__button").addEventListener("click", ()=>{
-                this.logoBurger.classList.toggle('visually-hidden');
-                this.eMain.classList.toggle("burger__menu--open");
-            })
+            this.blackBackground=document.querySelector('.header--background');
+            this.burger();
         },
-    }
-    BurgerMenu.init();
+        burger(){
+            this.eMain.classList.add("burger__menu");
+            document.addEventListener("click", (event)=>{
+                if (event.target.closest(".burger__button")||(event.target.closest('.header__top'))){
+                    this.logoBurger.classList.remove('visually-hidden');
+                    this.blackBackground.classList.add('black')
+                    this.eMain.classList.remove("burger__menu--open");
 
-/*function elementPosition (a) {
+                }
+                else {
+                    this.logoBurger.classList.add('visually-hidden');
+                    this.eMain.classList.add("burger__menu--open");
+                    this.blackBackground.classList.remove('black')
+
+                }
+
+            })
+        }
+    }
+        BurgerMenu.init();
+
+function elementPosition (a) {
     let b = a.getBoundingClientRect();
     return {
         clientX: a.offsetLeft,
@@ -57,13 +67,13 @@ let beforFooter = document.querySelector('.feedback');
 let svgAnimation= document.querySelector('.svg__animation');
 window.addEventListener('scroll', function() {
     svgAnimation.style.transform = `translate(${-window.scrollY/2}px,0)`  ;
-    console.log("test");
+
+    /*console.log("test");
     let positions = elementPosition(beforFooter);
     beforFooter.style.marginBottom = `${footer.clientHeight - (window.scrollY-positions.clientY)}px`;
     console.table({
         "hauteur de l'element footer":footer.clientHeight,
         "Postition de la fenetre": window.scrollY,
         "Position verticale dans du feedback": positions.clientY,
-    });
-
-});*/
+    });*/
+});

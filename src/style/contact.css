@@ -393,14 +393,6 @@ textarea{
 
 
 
-
-
-
-
-
-
-
-
 /*MOBILE*/
 @media only screen and (max-width: 768px) {
     html{
@@ -414,17 +406,24 @@ textarea{
         flex-wrap: wrap;
         margin:3%;
     }
-    .header__top.burger__menu--open{
-        left: 100%;
-    }
-    .header__logo{
+    .header__logo {
         display: flex;
         justify-content: space-between;
         align-items: center;
         z-index: 1;
         margin-left: 20px;
     }
+    .header__top.burger__menu--open{
+        transform: translateX(100%);
 
+    }
+    .black{
+        background-color: rgba(63, 63, 63, 0.6);
+        width: 100%;
+        min-height: 100%;
+        position: fixed;
+        z-index: 2;
+    }
     .burger__menu{
         transition: transform .3s linear;
         display: flex;
@@ -463,6 +462,7 @@ textarea{
     .burger__logo{
             margin: 0 auto;
         }
+}
     .footer{
         padding:20px 15px;
         text-align: center;
@@ -477,7 +477,6 @@ textarea{
     .objectif__name{
         font-size: 15px;
     }
-}
 /*animation JS*/
 .reveal{
     opacity: 0;
